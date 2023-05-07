@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:i18next/recommended",
     "airbnb",
     "prettier",
     "plugin:prettier/recommended",
@@ -19,7 +20,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint", "prettier"],
+  plugins: ["react", "@typescript-eslint", "i18next", "prettier"],
   rules: {
     indent: [2, 2],
     "prettier/prettier": ["error", { endOfLine: "auto" }],
@@ -43,6 +44,7 @@ module.exports = {
     "no-unused-vars": "warn",
     "no-shadow": "off",
     "no-underscore-dangle": "off",
+    "i18next/no-literal-string": ["error", { markupOnly: true }],
   },
   globals: {
     __IS_DEV__: true,
