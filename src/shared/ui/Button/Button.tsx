@@ -12,7 +12,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   theme?: ThemeButton;
 }
 
-const Button: FC<ButtonProps> = (props) => {
+export const Button: FC<ButtonProps> = (props) => {
   const { children, className, theme, ...otherProps } = props;
 
   return (
@@ -25,5 +25,3 @@ const Button: FC<ButtonProps> = (props) => {
     </button>
   );
 };
-
-export default Button;
