@@ -3,7 +3,7 @@ on:
   push:
     branches: [master]
   pull_request:
-    branchas: [master]
+    branches: [master]
 jobs:
   pipeline:
     runs-on: ubuntu-latest
