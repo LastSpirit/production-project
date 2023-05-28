@@ -23,7 +23,7 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint", "i18next", "prettier"],
   rules: {
-    indent: [2, 2],
+    // indent: [2, 2],
     "prettier/prettier": [
       "error",
       {

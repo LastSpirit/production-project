@@ -12,7 +12,7 @@ import {
 import { loginActions, loginReducer } from "../../model/slice/loginSlice";
 import { getLoginUsername } from "../../model/selectors/getLoginUsername/getLoginUsername";
 import { getLoginPassword } from "../../model/selectors/getLoginPassword/getLoginPassword";
-import { getLoginLoading } from "../../model/selectors/getLoginLoading/getLoginLoading";
+import { getLoginIsLoading } from "../../model/selectors/getLoginIsLoading/getLoginIsLoading";
 import { getLoginError } from "../../model/selectors/getLoginError/getLoginError";
 import { loginByUsername } from "../../model/services/loginByUsername/loginByUsername";
 
@@ -32,7 +32,7 @@ const LoginForm = memo(({ className }: LoginFormProps) => {
 
   const username = useSelector(getLoginUsername);
   const password = useSelector(getLoginPassword);
-  const isLoading = useSelector(getLoginLoading);
+  const isLoading = useSelector(getLoginIsLoading);
   const error = useSelector(getLoginError);
 
   const onChangeUsername = useCallback(
