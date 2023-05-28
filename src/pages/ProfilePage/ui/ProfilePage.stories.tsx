@@ -1,13 +1,12 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
 import { ThemeDecorator } from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
 import { Theme } from "app/providers/ThemeProvider";
-import { PageError } from "./PageError";
+import ProfilePage from "./ProfilePage";
 
 const meta = {
-  title: "widget/PageError",
-  component: PageError,
-} satisfies Meta<typeof PageError>;
+  title: "pages/ProfilePage",
+  component: ProfilePage,
+} satisfies Meta<typeof ProfilePage>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

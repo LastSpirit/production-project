@@ -1,7 +1,16 @@
 {
   "posts": [{ "id": "1", "title": "json-server", "author": "typicode" }],
   "comments": [{ "id": "1", "body": "some comment", "postId": "1" }],
-  "profile": { "name": "typicode" },
+  "profile": {
+    "first": "Дмитрий",
+    "lastname": "Лавров",
+    "age": 24,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://cdn2.iconfinder.com/data/icons/men-avatars/33/man_2-1024.png"
+  },
   "users": [
     {
       "id": "1",
