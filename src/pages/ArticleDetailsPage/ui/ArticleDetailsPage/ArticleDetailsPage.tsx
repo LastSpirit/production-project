@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { memo, useCallback } from "react";
 import { useTranslation } from "react-i18next";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { AddCommentForm } from "features/AddCommentForm";
 import { ArticleDetails } from "entities/Article";
 import { Text } from "shared/ui/Text/Text";
@@ -10,9 +10,12 @@ import {
   DynamicModuleLoader,
   ReducerList,
 } from "shared/lib/components/DynamicModuleLoader/DynamicModuleLoader";
+import { Page } from "shared/ui/Page/Page";
 import { classNames } from "shared/lib/classNames/classNames";
+import { RoutePath } from "shared/config/routeConfig/routeConfig";
 import { useInitialEffect } from "shared/lib/hooks/useInitialEffect/useInitialEffect";
 import { useAppDispatch } from "shared/lib/hooks/useAppDispatch/useAppDispatch";
+import { Button, ButtonTheme } from "shared/ui/Button/Button";
 import {
   articleDetailsCommentsReducer,
   getArticleComments,
@@ -39,9 +42,14 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
   const { t } = useTranslation("article");
   const { id } = useParams<{ id: string }>();
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   const comments = useSelector(getArticleComments.selectAll);
   const commentsIsLoading = useSelector(getArticleCommentsIsLoading);
   const commentsError = useSelector(getArticleCommentsIsError);
+
+  const onBackToList = useCallback(() => {
+    navigate(RoutePath.articles);
+  }, [navigate]);
 
   const onSendComment = useCallback(
     (text: string) => {
@@ -64,12 +72,15 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
 
   return (
     <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-      <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
+      <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
+        <Button theme={ButtonTheme.OUTLINE} onClick={onBackToList}>
+          {t("Назад  к списку")}
+        </Button>
         <ArticleDetails id={id} />
         <Text title={t("Комментарии")} className={cls.commentTitile} />
         <AddCommentForm onSendComment={onSendComment} />
         <CommentList isLoading={commentsIsLoading} comments={comments} />
-      </div>
+      </Page>
     </DynamicModuleLoader>
   );
 };

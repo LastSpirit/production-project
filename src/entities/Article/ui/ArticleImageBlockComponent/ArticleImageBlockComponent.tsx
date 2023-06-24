@@ -1,13 +1,13 @@
 import { memo } from "react";
 import { classNames } from "shared/lib/classNames/classNames";
 import { Text, TextAlign } from "shared/ui/Text/Text";
-import { ArticleImageBLock } from "../../model/types/article";
+import { ArticleImageBlock } from "../../model/types/article";
 
 import cls from "./ArticleImageBlockComponent.module.scss";
 
 interface ArticleImageBlockComponentProps {
   className?: string;
-  block: ArticleImageBLock;
+  block: ArticleImageBlock;
 }
 
 export const ArticleImageBlockComponent = memo(

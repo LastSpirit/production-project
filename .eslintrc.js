@@ -40,6 +40,7 @@ module.exports = {
     "react/function-component-definition": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
+    "react/no-array-index-key": "off",
     "react/jsx-filename-extension": [
       2,
       {
