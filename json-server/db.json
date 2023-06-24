@@ -6,16 +6,30 @@
       "author": "typicode"
     }
   ],
-  "profile": {
-    "first": "Дмитрий",
-    "lastname": "Лавров",
-    "age": 23,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Moscow",
-    "username": "admin",
-    "avatar": "https://cdn2.iconfinder.com/data/icons/men-avatars/33/man_2-1024.png"
-  },
+  "profile": [
+    {
+      "id": "1",
+      "first": "Дмитрий",
+      "lastname": "Лавров",
+      "age": 24,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "admin",
+      "avatar": "https://cdn2.iconfinder.com/data/icons/men-avatars/33/man_2-1024.png"
+    },
+    {
+      "id": "2",
+      "first": "Александр",
+      "lastname": "Данилин",
+      "age": 33,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Moscow",
+      "username": "danilin98",
+      "avatar": "https://www.digimarco.com/wp-content/uploads/2020/10/Avatar-Maker.png"
+    }
+  ],
   "users": [
     {
       "id": "1",
@@ -29,7 +43,7 @@
       "username": "user",
       "password": "123",
       "role": "USER",
-      "avatar": "https://cdn2.iconfinder.com/data/icons/men-avatars/33/man_2-1024.png"
+      "avatar": "https://www.digimarco.com/wp-content/uploads/2020/10/Avatar-Maker.png"
     }
   ],
   "articles": [
@@ -40,7 +54,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -121,6 +137,24 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "test1",
+      "id": "qJhm9R-"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "test12",
+      "id": "oVXoDCy"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "test3",
+      "id": "BgbiaXm"
     }
   ]
 }
