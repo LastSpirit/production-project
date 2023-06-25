@@ -10,7 +10,7 @@ import {
   DynamicModuleLoader,
   ReducerList,
 } from "shared/lib/components/DynamicModuleLoader/DynamicModuleLoader";
-import { Page } from "shared/ui/Page/Page";
+import { Page } from "widgets/Page/Page";
 import { classNames } from "shared/lib/classNames/classNames";
 import { RoutePath } from "shared/config/routeConfig/routeConfig";
 import { useInitialEffect } from "shared/lib/hooks/useInitialEffect/useInitialEffect";
