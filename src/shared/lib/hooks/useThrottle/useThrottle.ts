@@ -12,7 +12,7 @@ export function useThrottle(callback: (...args: any[]) => void, delay: number) {
 
         timeoutRef.current = setTimeout(() => {
           throttleRef.current = false;
-          timeoutRef.current = null;
+          clearTimeout(timeoutRef.current);
         }, delay);
       }
     },

@@ -13,13 +13,13 @@ export const fetchNextArticlesPage = createAsyncThunk<
   void,
   ThunkConfig<string>
 >("articlesPage/fetchNextArticlesPage", async (_, thunkApi) => {
-  const { getState, extra, rejectWithValue, dispatch } = thunkApi;
+  const { getState, dispatch } = thunkApi;
   const page = getArticlesPageNum(getState());
   const hasMore = getArticlesPageHasMore(getState());
   const isLoading = getArticlesPageIsLoading(getState());
 
   if (hasMore && !isLoading) {
     dispatch(articlesPageActions.setPage(page + 1));
-    dispatch(fetchArticlesList({ page: page + 1 }));
+    dispatch(fetchArticlesList({}));
   }
 });

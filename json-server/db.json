@@ -49,11 +49,11 @@
   "articles": [
     {
       "id": "1",
-      "title": "Javascript news",
+      "title": "Javascript news свежая",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 22,
+      "createdAt": "05.02.2022",
       "userId": "1",
       "type": ["IT"],
       "blocks": [
@@ -120,10 +120,10 @@
     {
       "id": "2",
       "title": "Python news",
-      "subtitle": "Что нового в JS за 2022 год?",
+      "subtitle": "Что нового в JS за 2019 год?",
       "img": "https://fuzeservers.ru/wp-content/uploads/c/c/4/cc4c5b59e2c7fd49716630c5323fce6e.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 215,
+      "createdAt": "16.06.2019",
       "userId": "1",
       "type": ["IT"],
       "blocks": [
@@ -144,8 +144,8 @@
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://pluspng.com/img-png/kotlin-logo-png-kotlin-logo-png-transparent-amp-svg-vector-pluspng-2400x2475.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 1233,
+      "createdAt": "16.03.2022",
       "userId": "1",
       "type": ["IT"],
       "blocks": [
@@ -186,10 +186,10 @@
     {
       "id": "5",
       "title": "Kotlin news",
-      "subtitle": "Что нового в JS за 2022 год?",
+      "subtitle": "Что нового в JS за 2018 год?",
       "img": "https://pluspng.com/img-png/kotlin-logo-png-kotlin-logo-png-transparent-amp-svg-vector-pluspng-2400x2475.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 333,
+      "createdAt": "24.02.2018",
       "userId": "1",
       "type": ["IT"],
       "blocks": [
@@ -210,8 +210,8 @@
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://fuzeservers.ru/wp-content/uploads/c/c/4/cc4c5b59e2c7fd49716630c5323fce6e.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 11,
+      "createdAt": "11.08.2022",
       "userId": "1",
       "type": ["IT"],
       "blocks": [
@@ -254,8 +254,8 @@
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://fuzeservers.ru/wp-content/uploads/c/c/4/cc4c5b59e2c7fd49716630c5323fce6e.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 11,
+      "createdAt": "12.05.2022",
       "userId": "1",
       "type": ["IT"],
       "blocks": [
@@ -320,7 +320,7 @@
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://pluspng.com/img-png/kotlin-logo-png-kotlin-logo-png-transparent-amp-svg-vector-pluspng-2400x2475.png",
-      "views": 1022,
+      "views": 8634,
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": ["IT"],
