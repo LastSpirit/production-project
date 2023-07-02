@@ -21,7 +21,13 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint", "i18next", "prettier"],
+  plugins: [
+    "react",
+    "@typescript-eslint",
+    "i18next",
+    "prettier",
+    "spichka-fsd-plugin",
+  ],
   rules: {
     // indent: [2, 2],
     "prettier/prettier": [
@@ -65,6 +71,7 @@ module.exports = {
     "jsx-a11y/no-static-element-interactions": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "no-param-reassign": "off",
+    "spichka-fsd-plugin/path-checker": "error",
   },
   globals: {
     __IS_DEV__: true,

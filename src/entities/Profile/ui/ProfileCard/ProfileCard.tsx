@@ -6,6 +6,7 @@ import { Text, TextAlign, TextTheme } from "shared/ui/Text/Text";
 import { Input } from "shared/ui/Input/Input";
 import { Loader } from "shared/ui/Loader/Loader";
 import { Avatar } from "shared/ui/Avatar/Avatar";
+import { HStack, VStack } from "shared/ui/Stack";
 import { Profile } from "../../model/types/profile";
 
 import cls from "./ProfileCard.module.scss";
@@ -46,24 +47,30 @@ export const ProfileCard = (props: ProfileCardProps) => {
 
   if (isLoading) {
     return (
-      <div
+      <HStack
+        justify="center"
+        max
         className={classNames(cls.ProfileCard, {}, [className, cls.loading])}
       >
         <Loader />
-      </div>
+      </HStack>
     );
   }
 
   if (error) {
     return (
-      <div className={classNames(cls.ProfileCard, {}, [className, cls.error])}>
+      <HStack
+        justify="center"
+        max
+        className={classNames(cls.ProfileCard, {}, [className, cls.error])}
+      >
         <Text
           align={TextAlign.CENTER}
           theme={TextTheme.ERROR}
           title={t("Произошла ошибка при загрузке профиля")}
           text={t("Попробуйте обновить страницу")}
         />
-      </div>
+      </HStack>
     );
   }
 
@@ -72,11 +79,15 @@ export const ProfileCard = (props: ProfileCardProps) => {
   };
 
   return (
-    <div className={classNames(cls.ProfileCard, mods, [className])}>
+    <VStack
+      gap="16"
+      max
+      className={classNames(cls.ProfileCard, mods, [className])}
+    >
       {data?.avatar && (
-        <div className={cls.avatarWrapper}>
+        <HStack justify="center" max className={cls.avatarWrapper}>
           <Avatar src={data?.avatar} alt="user" />
-        </div>
+        </HStack>
       )}
       <Input
         value={data?.first}
@@ -132,6 +143,6 @@ export const ProfileCard = (props: ProfileCardProps) => {
         onChange={onChangeCountry}
         readonly={readonly}
       />
-    </div>
+    </VStack>
   );
 };
