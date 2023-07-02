@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { classNames } from "shared/lib/classNames/classNames";
-import { Page } from "widgets/Page/Page";
+import { Page } from "widgets/Page/ui/Page";
 import {
   DynamicModuleLoader,
   ReducerList,

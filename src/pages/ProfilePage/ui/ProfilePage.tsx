@@ -14,7 +14,7 @@ import {
 import { useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
-import { Page } from "widgets/Page/Page";
+import { Page } from "widgets/Page/ui/Page";
 import { Currency } from "entities/Currency";
 import { Country } from "entities/Country";
 import {

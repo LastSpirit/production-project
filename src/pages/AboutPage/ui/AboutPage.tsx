@@ -1,4 +1,4 @@
-import { Page } from "widgets/Page/Page";
+import { Page } from "widgets/Page/ui/Page";
 import { useTranslation } from "react-i18next";
 
 const AboutPage = () => {
