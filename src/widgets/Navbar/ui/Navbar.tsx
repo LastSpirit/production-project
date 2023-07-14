@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { LoginModal } from "features/AuthByUsername";
 import { getUserAuthData, userActions } from "entities/User";
+import { Avatar } from "shared/ui/Avatar/Avatar";
 import { classNames } from "shared/lib/classNames/classNames";
+import { Dropdown } from "shared/ui/Dropdown/Dropdown";
 import { Button, ButtonTheme } from "shared/ui/Button/Button";
 import { RoutePath } from "shared/config/routeConfig/routeConfig";
 import { Text, TextTheme } from "shared/ui/Text/Text";
@@ -44,13 +46,21 @@ export const Navbar = memo(({ className }: NavbarProps) => {
         <AppLink theme={AppLinkTheme.SECONDARY} to={RoutePath.article_create}>
           {t("Создать статью")}
         </AppLink>
-        <Button
-          theme={ButtonTheme.CLEAR_INVERTED}
-          className={cls.links}
-          onClick={onLogout}
-        >
-          {t("Выйти")}
-        </Button>
+        <Dropdown
+          direction="bottom left"
+          className={cls.dropdown}
+          items={[
+            {
+              content: t("Профиль"),
+              href: `${RoutePath.profile}${authData.id}`,
+            },
+            {
+              content: t("Выйти"),
+              onClick: onLogout,
+            },
+          ]}
+          trigger={<Avatar src={authData.avatar} size={30} />}
+        />
       </header>
     );
   }

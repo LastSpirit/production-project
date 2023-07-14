@@ -7,14 +7,9 @@
   background: var(--inverted-bg-color);
 }
 
-.links {
+.links,
+.dropdown {
   margin-left: auto;
-
-  a {
-    &:first-child {
-      margin-right: 15px;
-    }
-  }
 }
 
 .appName {

@@ -16,7 +16,7 @@
       "country": "Russia",
       "city": "Moscow",
       "username": "admin",
-      "avatar": "https://cdn2.iconfinder.com/data/icons/men-avatars/33/man_2-1024.png"
+      "avatar": "https://codeguida.com/media/post_title/g3033.png"
     },
     {
       "id": "2",
@@ -546,6 +546,12 @@
       "userId": "2",
       "text": "test",
       "id": "SPlqSr6"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "dada",
+      "id": "cMKkWxh"
     }
   ]
 }
