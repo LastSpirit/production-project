@@ -5,7 +5,7 @@ import avatar from "shared/assets/tests/storybook.png";
 import { ProfileCard } from "./ProfileCard";
 
 const meta = {
-  title: "entities/ProfileCard",
+  title: "entities/Profile/ProfileCard",
   component: ProfileCard,
 } satisfies Meta<typeof ProfileCard>;
 

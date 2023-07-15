@@ -13,7 +13,6 @@ import {
 } from "shared/lib/components/DynamicModuleLoader/DynamicModuleLoader";
 import { useAppDispatch } from "shared/lib/hooks/useAppDispatch/useAppDispatch";
 import { useInitialEffect } from "shared/lib/hooks/useInitialEffect/useInitialEffect";
-import { ValidateProfileError } from "../../model/types/editableProfileCardSchema";
 import { getProfileForm } from "../../model/selectors/getProfileForm/getProfileForm";
 import { getProfileIsLoading } from "../../model/selectors/getProfileIsLoading/getProfileIsLoading";
 import { getProfileError } from "../../model/selectors/getProfileError/getProfileError";
@@ -22,10 +21,11 @@ import { getProfileValidateErrors } from "../../model/selectors/getProfileValida
 import { profileActions, profileReducer } from "../../model/slice/profileSlice";
 import { fetchProfileData } from "../../model/services/fetchProfileData/fetchProfileData";
 import { EditableProfileCardHeader } from "../EditableProfileCardHeader/EditableProfileCardHeader";
+import { ValidateProfileError } from "../../model/const/const";
 
 interface EditableProfileCardProps {
   className?: string;
-  id: string;
+  id?: string;
 }
 
 const reducers: ReducerList = {

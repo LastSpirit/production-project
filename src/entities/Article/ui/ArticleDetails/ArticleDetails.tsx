@@ -21,7 +21,8 @@ import {
   getArticleDetailsError,
 } from "../../model/selectors/articleDetails";
 import { fetchArticleById } from "../../model/services/fetchArticleById/fetchArticleById";
-import { ArticleBlock, ArticleBlockType } from "../../model/types/article";
+import { ArticleBlock } from "../../model/types/article";
+import { ArticleBlockType } from "../../model/const/articleConst";
 import { ArticleCodeBlockComponent } from "../ArticleCodeBlockComponent/ArticleCodeBlockComponent";
 import { ArticleImageBlockComponent } from "../ArticleImageBlockComponent/ArticleImageBlockComponent";
 import { ArticleTextBlockComponent } from "../ArticleTextBlockComponent/ArticleTextBlockComponent";
@@ -137,6 +138,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
     <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
       <VStack
         gap="16"
+        max
         className={classNames(cls.ArticleDetails, {}, [className])}
       >
         {content}

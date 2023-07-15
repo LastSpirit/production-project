@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { ArticleListItem } from "./ArticleListItem";
+import { Article } from "../../model/types/article";
 import {
-  Article,
   ArticleBlockType,
   ArticleType,
   ArticleView,
-} from "../../model/types/article";
+} from "../../model/const/articleConst";
 
 const article: Article = {
   id: "1",
