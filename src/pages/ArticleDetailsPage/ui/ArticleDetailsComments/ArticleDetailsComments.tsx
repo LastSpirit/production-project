@@ -1,13 +1,13 @@
 import { useSelector } from "react-redux";
 import { useCallback } from "react";
-import { AddCommentForm } from "features/AddCommentForm";
 import { useTranslation } from "react-i18next";
-import { classNames } from "shared/lib/classNames/classNames";
-import { Text, TextSize } from "shared/ui/Text/Text";
-import { useAppDispatch } from "shared/lib/hooks/useAppDispatch/useAppDispatch";
-import { useInitialEffect } from "shared/lib/hooks/useInitialEffect/useInitialEffect";
-import { CommentList } from "entities/Comment";
-import { VStack } from "shared/ui/Stack";
+import { AddCommentForm } from "@/features/AddCommentForm";
+import { classNames } from "@/shared/lib/classNames/classNames";
+import { Text, TextSize } from "@/shared/ui/Text";
+import { useAppDispatch } from "@/shared/lib/hooks/useAppDispatch/useAppDispatch";
+import { useInitialEffect } from "@/shared/lib/hooks/useInitialEffect/useInitialEffect";
+import { CommentList } from "@/entities/Comment";
+import { VStack } from "@/shared/ui/Stack";
 import { addCommentForArticle } from "../../model/services/addCommentForArticle/addCommentForArticle";
 import { getArticleComments } from "../../model/slice/ArticleDetailsCommentsSlice";
 import {

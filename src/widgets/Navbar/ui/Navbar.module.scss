@@ -8,11 +8,18 @@
 }
 
 .links,
-.dropdown {
+.actions {
   margin-left: auto;
 }
 
 .appName {
   width: var(--sidebar-width);
   margin-left: 15px;
+}
+
+.notifications {
+  min-height: 150px;
+  max-height: 300px;
+  width: 500px;
+  overflow-y: auto;
 }

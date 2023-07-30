@@ -71,7 +71,22 @@ module.exports = {
     "jsx-a11y/no-static-element-interactions": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "no-param-reassign": "off",
-    "spichka-fsd-plugin/path-checker": "error",
+    "spichka-fsd-plugin/path-checker": ["error", { alias: "@" }],
+    "spichka-fsd-plugin/layer-imports": [
+      "error",
+      { alias: "@", ignoreImportPatterns: ["**/StoreProvider", "**/testing"] },
+    ],
+    "spichka-fsd-plugin/public-api-imports": [
+      "error",
+      {
+        alias: "@",
+        testFilesPatterns: [
+          "**/*.test.*",
+          "**/*.story.*",
+          "**/StoreDecorator.tsx",
+        ],
+      },
+    ],
   },
   globals: {
     __IS_DEV__: true,

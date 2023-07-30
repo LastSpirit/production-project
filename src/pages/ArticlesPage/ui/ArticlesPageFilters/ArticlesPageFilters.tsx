@@ -8,14 +8,14 @@ import {
   ArticleView,
   ArticleViewSelector,
   ArticlesSortField,
-} from "entities/Article";
-import { classNames } from "shared/lib/classNames/classNames";
-import { Card } from "shared/ui/Card/Card";
-import { Input } from "shared/ui/Input/Input";
-import { SortOrder } from "shared/types";
-import { TabItem, Tabs } from "shared/ui/Tabs/Tabs";
-import { useAppDispatch } from "shared/lib/hooks/useAppDispatch/useAppDispatch";
-import { useDebounce } from "shared/lib/hooks/useDebounce/useDebounce";
+} from "@/entities/Article";
+import { classNames } from "@/shared/lib/classNames/classNames";
+import { Card } from "@/shared/ui/Card";
+import { Input } from "@/shared/ui/Input";
+import { SortOrder } from "@/shared/types";
+import { TabItem, Tabs } from "@/shared/ui/Tabs";
+import { useAppDispatch } from "@/shared/lib/hooks/useAppDispatch/useAppDispatch";
+import { useDebounce } from "@/shared/lib/hooks/useDebounce/useDebounce";
 import {
   getArticlesPageOrder,
   getArticlesPageSearch,

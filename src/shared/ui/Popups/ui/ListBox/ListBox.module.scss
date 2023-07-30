@@ -1,0 +1,12 @@
+.options {
+  position: absolute;
+  background: var(--listbox-bg);
+  z-index: 10000;
+  box-shadow: 4px 4px 8px var(--listbox-bg);
+  outline-color: transparent;
+  cursor: pointer;
+}
+
+.item {
+  padding: 10px 20px;
+}

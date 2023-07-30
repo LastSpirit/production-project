@@ -6,15 +6,16 @@
     "target": "es5",
     "jsx": "react-jsx",
     "allowJs": true,
-    "baseUrl": "src/",
+    "baseUrl": ".",
     "paths": {
-      "app/*": ["app/*"],
-      "processes/*": ["processes/*"],
-      "pages/*": ["pages/*"],
-      "widgets/*": ["widgets/*"],
-      "features/*": ["features/*"],
-      "entities/*": ["entities/*"],
-      "shared/*": ["shared/*"]
+      "@/*": ["./src/*"]
+      // "app/*": ["app/*"],
+      // "processes/*": ["processes/*"],
+      // "pages/*": ["pages/*"],
+      // "widgets/*": ["widgets/*"],
+      // "features/*": ["features/*"],
+      // "entities/*": ["entities/*"],
+      // "shared/*": ["shared/*"]
     },
     "strict": true,
     "moduleResolution": "node",
